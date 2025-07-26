@@ -1,7 +1,13 @@
 const project_data = {
     real_time_stock: {
         title: "Real-Time Stock Analyzer",
-        desc: "A scalable real-time data analytics pipeline. It is designed to process high-frequency financial data and detect anomaly prices in real-time.",
+        desc: `Designed a real-time financial analytics system using <strong>Apache Flink</strong> and <strong>AWS Managed Flink</strong>, capable of ingesting and analyzing high-frequency data from <strong>Kinesis Data Streams</strong> to detect <strong>price anomalies</strong> and deliver live insights.<br><br>
+                <ul>
+                    <li>Enabled <strong>real-time processing</strong> for financial market data with millisecond-level latency.</li>
+                    <li>Persisted processed results to <strong>Amazon S3</strong> for historical storage and batch analytics.</li>
+                    <li>Integrated interactive <strong>data visualization</strong> dashboards to present real-time insights.</li>
+                    <li>Optimized for scalability and <strong>fault-tolerance</strong> to ensure consistent availability.</li>
+                </ul>`,
         tech: ["AWS", "Apache Flink", "AWS Managed Flink", "Kinesis", "Amazon S3"],
         img: "./images/real_time_stock.png",
         video: "",
@@ -9,23 +15,43 @@ const project_data = {
     },
     load_balancer: {
         title: "AWS Dynamic Infra",
-        desc: "This project builds a cost-efficient, scalable, and highly available cloud infrastructure on AWS, capable of automatically adjusting to traffic demands using Elastic Load Balancing(ELB) and Auto Scaling.It minimizes manual intervention while ensuring optimal performance under varying loads, making it ideal for production - grade applications.",
-        tech: ["AWS", "Load Balancer", "Security Group", "Amazon EC2"],
+        desc: `Designed a cost-efficient, scalable, and highly available cloud infrastructure on <strong>AWS</strong> for production-grade applications.<br><br>
+                <ul>
+                    <li>Implemented <strong>Elastic Load Balancing (ELB)</strong> and <strong>Auto Scaling</strong> to automatically adapt to traffic changes.</li>
+                    <li>Configured <strong>VPC routing</strong>, <strong>subnets</strong>, and <strong>security groups</strong> to control network flow and ensure secure access.</li>
+                    <li>Minimized manual intervention through infrastructure automation and monitoring.</li>
+                    <li>Ensured high availability and optimal performance under variable loads.</li>
+                </ul>`,
+        tech: ["AWS", "Load Balancer", "Security Group", "Amazon EC2", "VPC", "Subnets"],
         img: "./images/load_balancer.jpg",
         video: "",
         github: "",
     },
     chatbot: {
         title: "AWS Pathfinding Chatbot",
-        desc: "This project implements an intelligent chatbot system using AWS Lex v2 and AWS Lambda, capable of answering user queries about the shortest path between two cities through natural language input. It showcases seamless integration of cloud services for conversational AI, graph-based computation, and persistent data storage.",
-        tech: ["AWS", "AWS Lex v2", "AWS Lambda"],
+        desc: `Built an intelligent chatbot system using <strong>AWS Lex v2</strong> and <strong>AWS Lambda</strong> that understands natural language queries to find the shortest path between cities and responds to users.<br><br>
+                <ul>
+                    <li>Enabled users to communicate with the system through natural human language.</li>
+                    <li>Processed graph-based shortest path calculations in real time via Lambda functions.</li>
+                    <li>Integrated with <strong>DynamoDB</strong> for persistent data storage.</li>
+                    <li>Demonstrated seamless orchestration of AWS cloud services for conversational AI.</li>
+                    <li>Delivered an intuitive and responsive user experience through NLP-powered interactions.</li>
+                </ul>`,
+        tech: ["AWS", "AWS Lex v2", "AWS Lambda", "DynamoDB"],
         img: "./images/chatbot_2.jpg",
         video: "",
         github: "",
     },
     terrain: {
         title: "Terrain Simulator",
-        desc: "This project showcases a custom CPU-GPU rendering pipeline for generating and visualizing a realistic 3D terrain. The terrain is rendered with Blinn-Phong shading to simulate natural lighting and surface details. Users can interact with the environment through 'drive' and 'fly' modes, providing immersive navigation. Additionally, procedural erosion effects are implemented to simulate natural terrain transformation over time.",
+        desc: `Developed a custom CPU-GPU rendering pipeline for realistic 3D terrain visualization using <strong>JavaScript</strong> and <strong>Blinn-Phong</strong> shading.<br><br>
+                <ul>
+                    <li>Rendered natural lighting and surface details with Blinn-Phong shading.</li>
+                    <li>Implemented interactive <strong>'drive' and 'fly'</strong> modes for terrain exploration.</li>
+                    <li>Enabled terrain smoothing via user-input parameters to <strong>simulate erosion effects like rainfall</strong>.</li>
+                    <li>Rendered <strong>grass and soil textures</strong> based on terrain height for realistic surface differentiation.</li>
+                    <li>Used <strong>color mapping</strong> to represent elevation through contour visualization.</li>
+                </ul>`,
         tech: ["JavaScript", "WebGL", "CPU-GPU pipeline", "Blinn-Phong"],
         img: "./images/terrain_2.jpg",
         video: "https://youtu.be/P-eXagOgGXw",
@@ -33,7 +59,13 @@ const project_data = {
     },
     obj: {
         title: "3D Model Generator",
-        desc: "This project focuses on implementing texture mapping in a 3D rendering pipeline. It allows users to project custom images onto any 3D model surface, enabling detailed surface appearance and realism. The system handles coordinate mapping and interpolation to ensure accurate texture placement on complex geometries.",
+        desc: `Implemented <strong>texture mapping</strong> in a 3D rendering pipeline using <strong>JavaScript</strong> and <strong>WebGL</strong>.<br><br>
+                <ul>
+                    <li>Projected custom images onto 3D model surfaces for enhanced realism.</li>
+                    <li>Handled coordinate mapping and interpolation for accurate texture placement on complex geometries.</li>
+                    <li>Implemented <strong>Blinn-Phong shading</strong> and shadows to improve visual effects.</li>
+                    <li>Developed a GPU-based rendering pipeline for efficient processing.</li>
+                </ul>`,
         tech: ["JavaScript", "WebGL", "CPU-GPU Pipeline", "Blinn-Phong", "Texture Mapping"],
         img: "./images/obj_2.jpg",
         video: "https://youtu.be/uHb1QbmsHDE",
@@ -41,7 +73,13 @@ const project_data = {
     },
     spheres: {
         title: "Collision Simulator",
-        desc: "This project simulates elastic collisions between spheres based on the principles of kinetic energy conservation and Newtonian mechanics. The motion and collision responses are computed using Euler’s method for numerical integration, enabling a visually accurate and physically plausible animation of dynamic sphere interactions.",
+        desc: `Simulated elastic collisions between spheres using <strong>JavaScript</strong> and <strong>WebGL</strong>, implementing <strong>Blinn-Phong shading</strong> and shadows for realistic rendering.<br><br>
+                <ul>
+                    <li>Computed motion and collision responses with Euler’s method for accurate physics simulation.</li>
+                    <li>Applied kinetic energy conservation and Newtonian mechanics principles.</li>
+                    <li>Created visually plausible animations of dynamic sphere interactions.</li>
+                    <li>Integrated shading and lighting models to enhance 3D realism.</li>
+                </ul>`,
         tech: ["JavaScript", "WebGL", "CPU-GPU Pipeline", "Blinn-Phong", "Euler's Method"],
         img: "./images/spheres_2.jpg",
         video: "https://youtu.be/b2m1NF_2YFY",
@@ -49,7 +87,13 @@ const project_data = {
     },
     textures: {
         title: "Rasterizer",
-        desc: "This project implements a basic rasterization pipeline using the Digital Differential Analyzer (DDA) algorithm to render 2D graphics. The system reads geometric and color data from custom-formatted .txt files, processes them through the rasterization pipeline, and outputs the final result as .png images.",
+        desc: `Implemented a basic 2D rasterization pipeline using the Digital Differential Analyzer (<strong>DDA</strong>) algorithm with <strong>Python</strong>.<br><br>
+                <ul>
+                    <li>Processed geometric and color data from custom-formatted .txt files.</li>
+                    <li>Leveraged CPU for data preparation and GPU via WebGL for efficient rendering.</li>
+                    <li>Generated final outputs as .png images.</li>
+                    <li>Focused on bridging software rasterization concepts with modern graphics hardware.</li>
+                </ul>`,
         tech: ["Python", "CPU-GPU Pipeline", "DDA Algorithm"],
         img: "./images/rast_2.png",
         video: "",
@@ -57,7 +101,14 @@ const project_data = {
     },
     weather_app: {
         title: "Smart Weather Mobile App",
-        desc: "A feature-rich mobile application that provides a personalized user experience through user authentication, dynamic theming, and real-time weather updates. The app integrates the Google Maps API to offer location-based functionalities and utilizes a Gemini model to enhance intelligent user interactions.",
+        desc: `A feature-rich mobile app developed with <strong>Android Studio</strong> using <strong>Java</strong>, delivering personalized experiences via user authentication, dynamic theming, and real-time weather updates.<br><br>
+                <ul>
+                    <li>Integrated <strong>Google Maps API</strong> for location-based services.</li>
+                    <li>Implemented intelligent user interactions powered by a <strong>Gemini model</strong>.</li>
+                    <li>Utilized <strong>LLM</strong> to generate comprehensive unit tests, ensuring robust code quality.</li>
+                    <li>Focused on smooth UX with real-time data and customizable themes.</li>
+                    <li>Ensured secure authentication and personalized content delivery.</li>
+                </ul>`,
         tech: ["Android Studio(Java)", "Gemini", "Google Maps", "Unit Test"],
         img: "./images/weather_app_2.jpg",
         video: "https://youtu.be/kSOcKqdvW6k",
@@ -65,7 +116,13 @@ const project_data = {
     },
     todo_list: {
         title: "Todo List",
-        desc: "This full-stack web application was developed using React.js for the front-end and Express.js for the back-end. It integrates MongoDB as the primary database, connected through a RESTful API architecture. The project is deployed on Render.com with continuous integration (CI) to ensure reliable development and deployment workflows.",
+        desc: `A full-stack web application built with <strong>React.js</strong> (frontend), <strong>Express.js</strong> (backend), and <strong>MongoDB</strong> as the database, all connected via a <strong>RESTful API</strong> architecture.<br><br>
+                <ul>
+                    <li>Implemented end-to-end features across the front-end and back-end.</li>
+                    <li>Integrated and structured MongoDB with Mongoose for data modeling.</li>
+                    <li>Deployed on <strong>Render.com</strong> with <strong>CI pipelines</strong> to automate testing and deployment.</li>
+                    <li>Focused on code reliability, modular structure, and maintainable architecture.</li>
+                </ul>`,
         tech: ["MongoDB", "Express.js", "React", "Node.js", "RESTful API", "Deployed(CI/CD)"],
         img: "./images/todo_list_2.jpg",
         video: "",
@@ -73,7 +130,13 @@ const project_data = {
     },
     task_api: {
         title: "Task Management API",
-        desc: "This project delivers a robust RESTful API for task and user management, designed as the backend for a productivity/todo application. Built with Node.js, Express, and MongoDB (via Mongoose), the API supports full CRUD operations on users and tasks with advanced query capabilities including filtering, sorting, pagination, field selection, and counting.",
+        desc: `A robust RESTful API backend for a productivity and todo application, built with <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong> (via <strong>Mongoose</strong>).<br><br>
+                <ul>
+                    <li>Implemented full CRUD functionality for users and tasks.</li>
+                    <li>Supported advanced query features: filtering, sorting, pagination, field selection, and counting.</li>
+                    <li>Designed scalable endpoints for seamless integration with front-end clients.</li>
+                    <li>Focused on performance, code clarity, and maintainability.</li>
+                </ul>`,
         tech: ["MongoDB", "Mongoose", "Express.js", "Node.js", "RESTful API"],
         img: "./images/task_api_2.jpg",
         video: "",
@@ -81,7 +144,13 @@ const project_data = {
     },
     pokemon: {
         title: "Pokémon Encyclopedia",
-        desc: "This project is a responsive Pokémon encyclopedia built as a single-page application using React and TypeScript. It enables users to browse, search, and explore detailed Pokémon information fetched from a public RESTful API. The application emphasizes performance, accessibility, and maintainable code architecture while delivering a smooth and interactive user experience.",
+        desc: `A responsive Pokémon encyclopedia built as a single-page application using <strong>React</strong> and <strong>TypeScript</strong>. It allows users to browse, search, and explore detailed Pokémon information from a public <strong>RESTful API</strong>.<br><br>
+                <ul>
+                    <li>Implemented smooth search and filtering for over 1000 Pokémon entries.</li>
+                    <li>Ensured fast performance and responsive design across devices.</li>
+                    <li>Focused on accessibility and clean, maintainable code architecture.</li>
+                    <li>Delivered a dynamic and interactive user experience using modern front-end tools.</li>
+                </ul>`,
         tech: ["TypeScript", "React", "RESTful API"],
         img: "./images/pokemon.jpg",
         video: "https://youtu.be/QEQtvMIsojg",
@@ -89,7 +158,13 @@ const project_data = {
     },
     academic_explorer: {
         title: "Academic Explorer",
-        desc: "Academic Research Explorer is a full-stack data exploration platform designed to help university students discover potential research advisors and assist faculty in analyzing research trends and collaboration opportunities. The application integrates MySQL, MongoDB, and Neo4j via RESTful APIs, offering a unified interface for querying structured, semi-structured, and graph-based academic data. Built with Dash and Flask, the app provides six interactive widgets that enable users to search top universities, explore influential publications, track keyword trends over time, identify key faculty in specific domains, and manage a personalized list of favorite professors.",
+        desc: `A full-stack data exploration platform that helps university students find potential research advisors and enables faculty to analyze academic trends and collaboration networks.<br><br>
+                <ul>
+                    <li>Integrated <strong>MySQL, MongoDB, and Neo4j</strong> via <strong>RESTful APIs</strong> to support complex academic queries.</li>
+                    <li>Built interactive dashboards with <strong>Flask</strong> and <strong>Plotly Dash</strong>.</li>
+                    <li>Implemented 6 key features: search universities, explore publications, visualize keyword trends, identify domain experts, and manage favorite faculty.</li>
+                    <li>Improved research discovery by unifying structured, semi-structured, and graph data.</li>
+                </ul>`,
         tech: ["Python", "Flask", "Dash", "MySQL", "MongoDB", "Neo4j", "RESTful API"],
         img: "./images/academic_explorer.png",
         video: "https://youtu.be/9M2eCvHyTOY",
@@ -104,7 +179,7 @@ function openModal(element) {
 
     if (data) {
         document.getElementById("modalTitle").textContent = data.title;
-        document.getElementById("modalDesc").textContent = data.desc;
+        document.getElementById("modalDesc").innerHTML = data.desc;
 
         const tech_list = document.querySelector("#projectModal .modal-tech-list");
         tech_list.innerHTML = "";
@@ -148,13 +223,13 @@ window.onclick = function (event) {
 
 
 function copyEmail() {
-  const email = document.getElementById("email_address").innerText;
-  navigator.clipboard.writeText(email).then(() => {
-    const msg = document.getElementById("copied_msg");
-    msg.classList.add("show");
+    const email = document.getElementById("email_address").innerText;
+    navigator.clipboard.writeText(email).then(() => {
+        const msg = document.getElementById("copied_msg");
+        msg.classList.add("show");
 
-    setTimeout(() => {
-      msg.classList.remove("show");
-    }, 1500);
-  });
+        setTimeout(() => {
+            msg.classList.remove("show");
+        }, 1500);
+    });
 }
