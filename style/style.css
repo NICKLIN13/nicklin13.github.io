@@ -607,6 +607,7 @@ body.modal-open {
     padding-bottom: 0px !important;
     gap: 30px !important;
     padding-top: 80px !important;
+    width: 100vw;
   }
 
   .hero-text {
@@ -652,8 +653,31 @@ body.modal-open {
     margin-left: 35px;
   }
 
+  .section#education,
+  .section#experience {
+    width: 100vw;
+  }
+
+  #projects {
+    padding: 40px 0px 20px 20px;
+  }
+
+  #projects_cards {
+    padding: 0px;
+  }
+
+  .card-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .card-title {
     font-size: 1.05rem;
+  }
+
+  .badge {
+    padding: 2px 12px;
+    margin: 5px 0px;
   }
   
   .sub_project_div {
