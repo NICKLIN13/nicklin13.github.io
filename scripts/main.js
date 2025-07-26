@@ -230,6 +230,6 @@ function copyEmail() {
 
         setTimeout(() => {
             msg.classList.remove("show");
-        }, 1500);
+        }, 1000);
     });
 }
