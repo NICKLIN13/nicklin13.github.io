@@ -236,4 +236,18 @@ function copyEmail() {
 
 function toggleMenu() {
     document.getElementById('navMenu').classList.toggle('active');
-  }
+}
+
+// close hamburger after clicking nav button
+document.addEventListener('DOMContentLoaded', function () {
+    const navMenu = document.getElementById('navMenu');
+    const links = navMenu.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function () {
+            if (window.innerWidth <= 768) {
+                navMenu.classList.remove('active');
+            }
+        });
+    });
+});
