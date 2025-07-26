@@ -145,3 +145,16 @@ window.onclick = function (event) {
         closeModal();
     }
 };
+
+
+function copyEmail() {
+  const email = document.getElementById("email_address").innerText;
+  navigator.clipboard.writeText(email).then(() => {
+    const msg = document.getElementById("copied_msg");
+    msg.classList.add("show");
+
+    setTimeout(() => {
+      msg.classList.remove("show");
+    }, 1500);
+  });
+}
