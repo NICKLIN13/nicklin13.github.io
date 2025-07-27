@@ -472,7 +472,7 @@ footer {
   position: absolute;
   top: 0%;
   right: 4%;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -538,8 +538,10 @@ body.modal-open {
 }
 
 .copied-msg {
-  display: none;
-  margin-left: 4px;
+  display: none; /* 預設隱藏 */
+  position: absolute;
+  top: 0;       /* 你想放的垂直位置 */
+  right: 0;     /* 靠右 */
   font-size: 14px;
   color: #FF6B6B;
 }
@@ -645,8 +647,9 @@ body.modal-open {
     order: 3;
     display: flex;
     justify-content: center;
-    margin-top: 15px !important;
+    margin-top: 10px !important;
     margin-bottom: 0px;
+    padding-top: 15px;
   }
 
   #skills h2 {
@@ -686,6 +689,7 @@ body.modal-open {
   
   .sub_project_div {
     max-width: 430px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   }
 
   #projectModal {
@@ -701,6 +705,10 @@ body.modal-open {
 
   .modal_content {
     max-height: 90%;
+  }
+
+  .modal_btn {
+    padding: 10px 10px;
   }
 
 }

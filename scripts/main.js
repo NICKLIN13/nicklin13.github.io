@@ -173,7 +173,9 @@ const project_data = {
 }
 
 
-function openModal(element) {
+function openModal(element, event) {
+    event.stopPropagation();
+
     const projectId = element.dataset.projectId;
     const data = project_data[projectId];
 
@@ -208,19 +210,26 @@ function openModal(element) {
     }
 }
 
+// addEventListener to all .sub_project_div to openModal()
+document.querySelectorAll(".sub_project_div").forEach(div => {
+    div.addEventListener("click", function (event) {
+        openModal(this, event);
+    });
+});
+
 function closeModal() {
     document.getElementById("projectModal").style.display = "none";
     document.body.classList.remove("modal-open");
 }
 
-// closeModal when click the space outside the modal
-window.onclick = function (event) {
+document.addEventListener("click", function (event) {
     const modal = document.getElementById("projectModal");
-    if (event.target === modal) {
+    const modalContent = document.querySelector(".modal_content");
+
+    if (modal.style.display === "flex" && !modalContent.contains(event.target)) {
         closeModal();
     }
-};
-
+});
 
 function copyEmail() {
     const email = document.getElementById("email_address").innerText;
