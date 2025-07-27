@@ -649,8 +649,12 @@ body.modal-open {
     margin-bottom: 0px;
   }
 
-  #skills {
-    margin-left: 35px;
+  #skills h2 {
+    margin-left: 28px;
+  }
+
+  .skills-list {
+    margin-left: 20px;
   }
 
   .section#education,
@@ -686,6 +690,7 @@ body.modal-open {
 
   #projectModal {
     height: 80%;
+    overflow-y: auto;
   }
 
   h2#modalTitle {
